@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -32,17 +32,17 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg font-serif mb-6">
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg font-serif mb-6">
             Wandile Umuzi Lodge
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-xl md:text-2xl font-medium text-[#F4C430] drop-shadow-sm font-sans mb-8">
+            className="text-lg sm:text-xl md:text-2xl font-medium text-[#F4C430] drop-shadow-sm font-sans mb-8">
             Experience Authentic Zimbabwean Hospitality
           </motion.p>
-          <p className="text-lg md:text-xl mb-12 text-white/95 max-w-2xl mx-auto font-inter leading-relaxed drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl mb-12 text-white/95 max-w-2xl mx-auto font-inter leading-relaxed drop-shadow-md">
             Located near the majestic Matopos National Park and Maleme Dam, 
             less than 20 km from Bulawayo city center - Zimbabwe&apos;s second largest city. 
             Your gateway to adventure, relaxation, and unforgettable memories.
@@ -58,11 +58,11 @@ export default function Hero() {
         >
           <div className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
             <MapPin className="w-6 h-6 text-sunny drop-shadow-lg" />
-            <span className="text-lg text-white font-semibold drop-shadow-md">Near Matopos Park</span>
+            <span className="text-sm sm:text-lg text-white font-semibold drop-shadow-md">Near Matopos Park</span>
           </div>
           <div className="flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 border border-white/20">
             <Phone className="w-6 h-6 text-sunny drop-shadow-lg" />
-            <span className="text-lg text-white font-semibold drop-shadow-md">+263 77 632 9831</span>
+            <span className="text-sm sm:text-lg text-white font-semibold drop-shadow-md">+263 77 632 9831</span>
           </div>
         </motion.div>
 
