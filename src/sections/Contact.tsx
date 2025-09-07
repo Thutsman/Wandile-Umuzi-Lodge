@@ -43,7 +43,7 @@ export default function Contact() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter">
             Ready to book your stay or have questions about our lodge? 
-            We're here to help make your Zimbabwean adventure unforgettable.
+            We&apos;re here to help make your Zimbabwean adventure unforgettable.
           </p>
         </motion.div>
 
@@ -61,8 +61,8 @@ export default function Contact() {
                 Contact Information
               </h3>
               <p className="text-gray-600 mb-8 font-inter">
-                We're available to answer your questions and help you plan your perfect stay. 
-                Don't hesitate to reach out through any of the channels below.
+                We&apos;re available to answer your questions and help you plan your perfect stay. 
+                Don&apos;t hesitate to reach out through any of the channels below.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ export default function Contact() {
               <div className="space-y-2 text-gray-600 font-inter">
                 <p>Monday - Sunday: 8:00 AM - 8:00 PM</p>
                 <p className="text-sm text-gray-500">
-                  We're available for bookings and inquiries throughout the week
+                  We&apos;re available for bookings and inquiries throughout the week
                 </p>
               </div>
             </motion.div>

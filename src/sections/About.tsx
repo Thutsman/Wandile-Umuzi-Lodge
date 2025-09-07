@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mountain, Waves, TreePine, Users } from 'lucide-react';
+import Image from 'next/image';
 
 export default function About() {
   const features = [
@@ -44,8 +45,8 @@ export default function About() {
             Welcome to Wandile Umuzi Lodge
           </h2>
           <p className="text-xl text-white/95 max-w-3xl mx-auto font-inter leading-relaxed drop-shadow-md">
-            Nestled in the heart of Zimbabwe's natural beauty, our lodge offers an authentic 
-            African experience that combines comfort with adventure. Whether you're seeking 
+            Nestled in the heart of Zimbabwe&apos;s natural beauty, our lodge offers an authentic 
+            African experience that combines comfort with adventure. Whether you&apos;re seeking 
             wildlife encounters, cultural immersion, or simply a peaceful retreat, we provide 
             the perfect base for your Zimbabwean journey.
           </p>
@@ -62,14 +63,14 @@ export default function About() {
               Our Story
             </h3>
             <p className="text-white/90 mb-6 font-inter leading-relaxed drop-shadow-md">
-              Wandile Umuzi Lodge was born from a passion for sharing Zimbabwe's incredible 
+              Wandile Umuzi Lodge was born from a passion for sharing Zimbabwe&apos;s incredible 
               natural heritage with visitors from around the world. Our family-run establishment 
               has been welcoming guests for years, offering a warm, authentic experience that 
               connects you with the land, the people, and the rich culture of this beautiful country.
             </p>
             <p className="text-white/90 font-inter leading-relaxed drop-shadow-md">
               Located strategically near Matopos National Park and Maleme Dam, we provide 
-              easy access to some of Zimbabwe's most spectacular attractions while maintaining 
+              easy access to some of Zimbabwe&apos;s most spectacular attractions while maintaining 
               the peaceful, rural atmosphere that makes our lodge special.
             </p>
           </motion.div>
@@ -82,10 +83,12 @@ export default function About() {
             className="relative"
           >
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="/images/about-image.jpeg"
                 alt="Wandile Umuzi Lodge exterior"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-sunny rounded-full opacity-20"></div>

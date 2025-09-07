@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Users, Heart, BookOpen } from 'lucide-react';
+import Image from 'next/image';
 
 export default function FarmTours() {
   const tourFeatures = [
@@ -99,9 +100,11 @@ export default function FarmTours() {
           >
             {/* Main Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Children feeding goats at the farm"
+                width={800}
+                height={320}
                 className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

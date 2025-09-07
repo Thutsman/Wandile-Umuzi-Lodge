@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Calendar, Users, Home, Tent, CheckCircle, MessageCircle, Mail, AlertCircle } from 'lucide-react';
+import { Home, Tent, CheckCircle, MessageCircle, Mail, AlertCircle } from 'lucide-react';
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -229,7 +229,7 @@ Please confirm availability and provide booking details. Thank you!`;
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter">
             Ready to experience authentic Zimbabwean hospitality? Fill out the form below 
-            and we'll get back to you to confirm your booking.
+            and we&apos;ll get back to you to confirm your booking.
           </p>
         </motion.div>
 
@@ -553,7 +553,7 @@ Please confirm availability and provide booking details. Thank you!`;
             {/* What's Included */}
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold text-earth mb-4 font-nunito">
-                What's Included
+                What&apos;s Included
               </h3>
               <ul className="space-y-2 text-gray-600 font-inter">
                 <li className="flex items-center">

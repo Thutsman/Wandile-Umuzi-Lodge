@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Calendar } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -44,7 +44,7 @@ export default function Hero() {
           </motion.p>
           <p className="text-lg md:text-xl mb-12 text-white/95 max-w-2xl mx-auto font-inter leading-relaxed drop-shadow-md">
             Located near the majestic Matopos National Park and Maleme Dam, 
-            less than 20 km from Bulawayo city center - Zimbabwe's second largest city. 
+            less than 20 km from Bulawayo city center - Zimbabwe&apos;s second largest city. 
             Your gateway to adventure, relaxation, and unforgettable memories.
           </p>
         </motion.div>

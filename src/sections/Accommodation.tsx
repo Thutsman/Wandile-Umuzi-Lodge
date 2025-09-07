@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Home, Tent, Utensils, ShowerHead, Flame, Waves } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Accommodation() {
   const accommodations = [
@@ -62,10 +63,12 @@ export default function Accommodation() {
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={accommodation.image}
                   alt={accommodation.type}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg">
                   <accommodation.icon className="w-6 h-6 text-forest inline mr-2" />

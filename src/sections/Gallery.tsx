@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -89,10 +90,13 @@ export default function Gallery() {
               className="relative group cursor-pointer overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
               onClick={() => setSelectedImage(index)}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
+                width={300}
+                height={256}
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -124,10 +128,13 @@ export default function Gallery() {
                 className="relative max-w-4xl max-h-full"
                 onClick={(e) => e.stopPropagation()}
               >
-                <img
+                <Image
                   src={images[selectedImage].src}
                   alt={images[selectedImage].alt}
+                  width={1200}
+                  height={800}
                   className="max-w-full max-h-full object-contain rounded-lg"
+                  sizes="100vw"
                 />
                 
                 {/* Close Button */}
